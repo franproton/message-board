@@ -2,6 +2,7 @@ extends layout
 
 block content
   h1= title
+  a(href=newMessageURL) New Message
   each val in messages
     p #{val.text}
     p #{val.added}
